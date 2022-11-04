@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Order {
     private int id;
-    List<Product>orderList = new ArrayList<>();
+    List<Product> orders = new ArrayList<>();
 
     public int getId() {
         return id;
@@ -15,20 +15,20 @@ public class Order {
         this.id = id;
     }
 
-    public List<Product> getOrderList() {
-        return orderList;
+    public List<Product> getOrders() {
+        return orders;
     }
 
-    public void setOrderList(List<Product> orderList) {
-        this.orderList = orderList;
+    public void setOrders(List<Product> orders) {
+        this.orders = orders;
     }
 
     public Order() {
     }
 
-    public Order(int id, List<Product> orderList) {
+    public Order(int id, List<Product> orders) {
         this.id = id;
-        this.orderList = orderList;
+        this.orders = orders;
     }
 
     @Override
@@ -37,13 +37,13 @@ public class Order {
         if (!(o instanceof Order order)) return false;
 
         if (getId() != order.getId()) return false;
-        return getOrderList() != null ? getOrderList().equals(order.getOrderList()) : order.getOrderList() == null;
+        return getOrders() != null ? getOrders().equals(order.getOrders()) : order.getOrders() == null;
     }
 
     @Override
     public int hashCode() {
         int result = getId();
-        result = 31 * result + (getOrderList() != null ? getOrderList().hashCode() : 0);
+        result = 31 * result + (getOrders() != null ? getOrders().hashCode() : 0);
         return result;
     }
 
@@ -51,7 +51,7 @@ public class Order {
     public String toString() {
         return "Order{" +
                 "id=" + id +
-                ", orderList=" + orderList +
+                ", orderList=" + orders +
                 '}';
     }
 }

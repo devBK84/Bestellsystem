@@ -24,7 +24,6 @@ public class ProductRepo {
             if (product.getName() == name) {
                 return product;
             }
-
         }
         return null;
 
