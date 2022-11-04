@@ -26,7 +26,13 @@ public class ProductRepo {
             }
         }
         return null;
+    }
 
+    @Override
+    public String toString() {
+        return "ProductRepo{" +
+                "productList=" + productList +
+                '}';
     }
 }
 

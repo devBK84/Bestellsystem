@@ -61,8 +61,8 @@ public class ShopService {
     @Override
     public String toString() {
         return "ShopService{" +
-                "productRepo=" + productRepo +
-                ", orderRepo=" + orderRepo +
+                " productRepo=" + productRepo +
+                ", \n orderRepo=" + orderRepo +
                 '}';
     }
 
