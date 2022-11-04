@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="302628fe-4f3a-4d1c-a444-a1c3d99b1639" name="Changes" comment="Update and add order and orderRepo&#10;Update OrderRepo">
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/neuefische/ShopService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="302628fe-4f3a-4d1c-a444-a1c3d99b1639" name="Changes" comment="Create ShopService and Update">
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/neuefische/ShopService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/neuefische/ShopService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +47,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667550083026</updated>
-      <workItem from="1667550084276" duration="13567000" />
+      <workItem from="1667550084276" duration="15065000" />
     </task>
     <task id="LOCAL-00001" summary="First create Product">
       <created>1667559305023</created>
@@ -71,7 +70,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667569151902</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Create ShopService and Update">
+      <created>1667572292281</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1667572292281</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,6 +98,7 @@
     <MESSAGE value="First create Product" />
     <MESSAGE value="Update and add order and orderRepo" />
     <MESSAGE value="Update and add order and orderRepo&#10;Update OrderRepo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update and add order and orderRepo&#10;Update OrderRepo" />
+    <MESSAGE value="Create ShopService and Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create ShopService and Update" />
   </component>
 </project>

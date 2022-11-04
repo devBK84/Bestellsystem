@@ -1,6 +1,7 @@
 package de.neuefische;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class ShopService {
@@ -66,9 +67,7 @@ public class ShopService {
     }
 
     // getProduct
-
     // listProducts
-
     // addOrder
     // getOrder
     // listOrder
@@ -81,5 +80,12 @@ public List<Product> getProductListFromProductRepo() {
 }
 public void addOrderToOrderRepo(Order orderToAdd){
         orderRepo.addOrder(orderToAdd);
+}
+
+public Order getOrderFromOrderRepo(int id){
+        return orderRepo.getOrder(id);
+}
+public List<Order> getOrderListFromOrderRepo(){
+        return orderRepo.getOrderList();
 }
 }
