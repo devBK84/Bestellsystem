@@ -21,7 +21,7 @@ public class ProductRepo {
 
     public Product getProduct(String name) {
         for (Product product : productList) {
-            if (product.getName() == name) {
+            if (product.getName().equals(name)) {
                 return product;
             }
         }
