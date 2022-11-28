@@ -1,8 +1,10 @@
 package de.neuefische;
 
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 
 public class ShopService {
    // ProducteRepo
@@ -51,12 +53,12 @@ public class ShopService {
         return getOrderRepo() != null ? getOrderRepo().equals(that.getOrderRepo()) : that.getOrderRepo() == null;
     }
 
-    @Override
-    public int hashCode() {
-        int result = getProductRepo() != null ? getProductRepo().hashCode() : 0;
-        result = 31 * result + (getOrderRepo() != null ? getOrderRepo().hashCode() : 0);
-        return result;
-    }
+//    @Override
+//    public String hashCode() {
+//        String result = getProductRepo() != null ? getProductRepo().hashCode() : "";
+//        result = 31 * result + (getOrderRepo() != null ? getOrderRepo().hashCode() : 0);
+//        return result;
+//    }
 
     @Override
     public String toString() {
@@ -75,17 +77,17 @@ public class ShopService {
 public Product getProductFromProductRepo(String name) {
         return productRepo.getProduct(name);
     }
-public List<Product> getProductListFromProductRepo() {
+public Map<String, Product> getProductListFromProductRepo() {
         return productRepo.getProductList();
 }
 public void addOrderToOrderRepo(Order orderToAdd){
         orderRepo.addOrder(orderToAdd);
 }
 
-public Order getOrderFromOrderRepo(int id){
+public Order getOrderFromOrderRepo(String id){
         return orderRepo.getOrder(id);
 }
-public List<Order> getOrderListFromOrderRepo(){
+public Map<String, Order> getOrderListFromOrderRepo(){
         return orderRepo.getOrderList();
 }
 }

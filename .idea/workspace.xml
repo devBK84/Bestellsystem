@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="302628fe-4f3a-4d1c-a444-a1c3d99b1639" name="Changes" comment="Update ShopService">
+    <list default="true" id="302628fe-4f3a-4d1c-a444-a1c3d99b1639" name="Changes" comment="Over and out &quot;Happy weekend&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/neuefische/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/neuefische/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/neuefische/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/neuefische/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/neuefische/OrderRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/neuefische/OrderRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/neuefische/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/neuefische/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/neuefische/ProductRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/neuefische/ProductRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/neuefische/ShopService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/neuefische/ShopService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +42,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="RunManager">
@@ -70,7 +74,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667550083026</updated>
-      <workItem from="1667550084276" duration="18534000" />
+      <workItem from="1667550084276" duration="19410000" />
+      <workItem from="1667810200557" duration="6265000" />
+      <workItem from="1667837288837" duration="1201000" />
+      <workItem from="1667897508624" duration="1480000" />
+      <workItem from="1668003221495" duration="434000" />
+      <workItem from="1668003682684" duration="48000" />
+      <workItem from="1669627661691" duration="8424000" />
     </task>
     <task id="LOCAL-00001" summary="First create Product">
       <created>1667559305023</created>
@@ -107,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667574085121</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Over and out &quot;Happy weekend&quot;">
+      <created>1667577753135</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1667577753135</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +147,7 @@
     <MESSAGE value="Update and add order and orderRepo&#10;Update OrderRepo" />
     <MESSAGE value="Create ShopService and Update" />
     <MESSAGE value="Update ShopService" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update ShopService" />
+    <MESSAGE value="Over and out &quot;Happy weekend&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Over and out &quot;Happy weekend&quot;" />
   </component>
 </project>

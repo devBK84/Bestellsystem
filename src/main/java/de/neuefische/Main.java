@@ -9,7 +9,9 @@ Er möchte auf der Konsole ausgeben lassen können:
 
 import java.sql.SQLOutput;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /*
 - Erstelle eine Klasse ProductRepo, die eine Product Liste enthält.
@@ -20,38 +22,38 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-        Product haferdrink = new Product(69,"Haferdrink");
-        Product muesli = new Product(70, "Muesli");
-        Product trockenfruechte = new Product (13, "Trockenfruechte");
-        Product banane = new Product(4, "Banane");
-        Product gemuese = new Product(5, "Gemuese");
-        Product blumen = new Product(89, "Blume");
+        Product haferdrink = new Product("69","Haferdrink");
+        Product muesli = new Product("70", "Muesli");
+        Product trockenfruechte = new Product ("13", "Trockenfruechte");
+        Product banane = new Product("4", "Banane");
+        Product gemuese = new Product("5", "Gemuese");
+        Product blumen = new Product("89", "Blume");
 
-        List<Product> breakfastProductList = new ArrayList<>();
+        Map<String, Product> breakfastProductList = new HashMap<>();
 
-        breakfastProductList.add(haferdrink);
-        breakfastProductList.add(muesli);
-        breakfastProductList.add(trockenfruechte);
-        breakfastProductList.add(banane);
-        breakfastProductList.add(gemuese);
-        breakfastProductList.add(blumen);
+        breakfastProductList.put(haferdrink.getId(),haferdrink);
+        breakfastProductList.put(muesli.getId(),muesli);
+        breakfastProductList.put(trockenfruechte.getId(),trockenfruechte);
+        breakfastProductList.put(banane.getId(), banane);
+        breakfastProductList.put(gemuese.getId(), gemuese);
+        breakfastProductList.put(blumen.getId(), blumen);
 
         ProductRepo breakfastRepo = new ProductRepo();
         breakfastRepo.setProductList(breakfastProductList);
 
         // System.out.println(breakfastRepo);
 
-        List<Product> orderFromAnnaList = new ArrayList<>();
-        orderFromAnnaList.add(haferdrink);
-        orderFromAnnaList.add(muesli);
-        orderFromAnnaList.add(trockenfruechte);
+        Map<String, Product> orderFromAnnaList = new HashMap<>();
+        orderFromAnnaList.put(haferdrink.getId(), haferdrink);
+        orderFromAnnaList.put(muesli.getId(), muesli);
+        orderFromAnnaList.put(trockenfruechte.getId(), trockenfruechte);
 
-        Order orderFromAnna = new Order(11, orderFromAnnaList);
+        Order orderFromAnna = new Order("", orderFromAnnaList);
         OrderRepo orderRepoMay = new OrderRepo();
-        List<Order> orderListMay = new ArrayList<>();
+        Map<String, Order> orderListMay = new HashMap<>();
 
-        orderListMay.add(orderFromAnna);
-        orderRepoMay.setOrderList(orderListMay);
+        orderListMay.put("", orderFromAnna);
+        orderRepoMay.addOrder(orderFromAnna);
 
        // System.out.println(orderRepoMay);
 

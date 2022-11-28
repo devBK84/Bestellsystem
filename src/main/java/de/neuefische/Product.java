@@ -2,22 +2,22 @@ package de.neuefische;
 
 public class Product {
 
-    private int id;
+    private String id;
     private String name;
 
     public Product() {
     }
 
-    public Product(int id, String name) {
+    public Product(String id, String name) {
         this.id = id;
         this.name = name;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -38,12 +38,12 @@ public class Product {
         return getName() != null ? getName().equals(product.getName()) : product.getName() == null;
     }
 
-    @Override
-    public int hashCode() {
-        int result = getId();
-        result = 31 * result + (getName() != null ? getName().hashCode() : 0);
-        return result;
-    }
+//    @Override
+//    public String hashCode() {
+//        String result = getId();
+//        result = getId() + (getName() != null ? getName().hashCode() : 0);
+//        return null;
+//    }
 
     @Override
     public String toString() {
